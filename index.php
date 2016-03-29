@@ -5,33 +5,7 @@
     <link rel="stylesheet" href="css/styles.css" >
     <script type="text/javascript" src="js/jquery_1.11.0/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB4l8S00eeb89-ZEOe400JRwtjX4iJSS9A&sensor=false"></script>
-
-    <script type="text/javascript">
-        $(document).ready(function() {
-            var mapCenter = new google.maps.LatLng(47.6145, -122.3418); //Google map Coordinates
-            var map;
-            map_initialize(); // load map
-            function map_initialize(){
-
-                //Google map option
-                var googleMapOptions =
-                {
-                    center: mapCenter,
-                    zoom: 17,
-                    panControl: true,
-                    zoomControl: true,
-                    zoomControlOptions: {
-                        style: google.maps.ZoomControlStyle.SMALL
-                    },
-                    scaleControl: true,
-                    mapTypeId: google.maps.MapTypeId.ROADMAP
-                };
-
-                map = new google.maps.Map(document.getElementById("google_map"), googleMapOptions);
-            }
-        });
-    </script>
-
+    <script type="text/javascript" src="js/scripts.js"></script>
 </head>
 <body>
 
